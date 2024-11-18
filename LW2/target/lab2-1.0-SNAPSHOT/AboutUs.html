@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CarShop</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="img">
+</head>
+<body>
+<style>
+    .background-image {
+        background-image: url('img/Фон.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Добавляем высоту для растяжения на всю длину экрана */
+    }
+    .navbar1 {
+        background-color: #146c43; /* Замените #f0f0f0 на цвет, который вы хотите использовать */
+    }
+</style>
+
+<div class="container-fluid p-0 background-image">
+    <div class="row">
+        <div class="col-12 text-center text-white">
+            <h1>Немного</h1>
+            <h1>о нас</h1>
+            <div class="btn-group btn-group-block" role="group" aria-label="Basic example">
+                <form method="GET" action="Main">
+                    <button type="submit" class="btn btn-primary btn-block">Главная</button>
+                </form>
+                <form method="GET" action="AboutUs">
+                    <button type="submit" class="btn btn-primary btn-block">О нас</button>
+                </form>
+                <form method="GET" action="Table">
+                    <button type="submit" class="btn btn-primary btn-block">Таблица</button>
+                </form>
+                <form method="GET" action="Contacts">
+                    <button type="submit" class="btn btn-primary btn-block">Контакты</button>
+                </form>
+                <form method="GET" action="FeedBack">
+                    <button type="submit" class="btn btn-primary btn-block">Обратная связь</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="accordion" id="accordionExample" style="margin-top: 75px; background-color: #9eeaf9">
+        <div class="accordion-item" style="background-color: #9eeaf9">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Определение
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>CarShop -</strong> это магазин первоклассных автомобилей
+                </div>
+                <div class="accordion-body">
+                Все наши машины отобранны лучшими специалистами мира
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item" style="background-color: #9eeaf9">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Автомобили
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Мы уже долго работаем в данной сфере и отлично разбираемся в автомобилях
+                </div>
+                <div class="accordion-body">
+                <strong>Паджеро -</strong> отличный внедорожник, который обладает высочайшей проходимостью. Можно парковаться на инвалидных местах, т.к. никто не осмелится сказать что-то против
+                </div>
+                <div class="accordion-body">
+                    <strong>Пробокс -</strong> машина-коробка. Совмещает в себе японский комфорт, надежность и стол
+                </div>
+                <div class="accordion-body">
+                    <strong>Марина -</strong> Формула-1 в мире японских авто. Способна гнать даже на 3 колёсах
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item" style="background-color: #9eeaf9">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Планы на будущее
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                Мы выйдем на международный уровень и будем продавать машины всей планете
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

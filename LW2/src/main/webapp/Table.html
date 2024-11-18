@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CarShop</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="img">
+</head>
+<body>
+<style>
+    .background-image {
+        background-image: url('img/Фон.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Добавляем высоту для растяжения на всю длину экрана */
+    }
+</style>
+
+<div class="container-fluid p-0 background-image">
+    <div class="row">
+        <div class="col-12 text-center text-white">
+            <h1>Список</h1>
+            <h1>автомобилей</h1>
+            <div class="btn-group btn-group-block" role="group" aria-label="Basic example">
+                <form method="GET" action="Main">
+                    <button type="submit" class="btn btn-primary btn-block">Главная</button>
+                </form>
+                <form method="GET" action="AboutUs">
+                    <button type="submit" class="btn btn-primary btn-block">О нас</button>
+                </form>
+                <form method="GET" action="Table">
+                    <button type="submit" class="btn btn-primary btn-block">Таблица</button>
+                </form>
+                <form method="GET" action="Contacts">
+                    <button type="submit" class="btn btn-primary btn-block">Контакты</button>
+                </form>
+                <form method="GET" action="FeedBack">
+                    <button type="submit" class="btn btn-primary btn-block">Обратная связь</button>
+                </form>
+            </div>
+        </div>
+        <table class="table" style="width: 60rem; margin: auto; margin-top: 75px;  background-color: #9eeaf9; border-color: #1a1d20; border:2px;">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Автомобиль</th>
+                <th scope="col">Цена</th>
+                <th scope="col">Пробег</th>
+                <th scope="col">Год выпуска</th>
+            </tr>
+            </thead>
+            <tbody class="table-group-divider">
+            <tr>
+                <th scope="row">1</th>
+                <td>Паджеро</td>
+                <td>750.000</td>
+                <td>120.000</td>
+                <td>2006</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Пробокс</td>
+                <td>450.000</td>
+                <td>130.000</td>
+                <td>2007</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Марина</td>
+                <td>250.000</td>
+                <td>1.200.000</td>
+                <td>1997</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
